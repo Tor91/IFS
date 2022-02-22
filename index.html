@@ -4,7 +4,7 @@
     <!-- It is web site for Institute of Food Technologies
     doing acording this template:  https://schalatashvili.wixsite.com/website -->
 <head>
-    <body>
+    
         <meta charset="utf-8">
         <title>სასურსათო ტექნოლოგიების ინსტიტუტი</title>
 
@@ -12,8 +12,17 @@
 		<meta name="author" content="Tornike Gagnidze">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">  
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    </body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Toggle between adding and removing the "responsive" class to topnav 
+			when the user clicks on the icon -->
+
+		<script src="js.js" defer></script>
+            
 </head>
+
+<body>
     <header>
         <h1>სასურსათო ტექნოლოგიების ინსტიტუტი</h1>
         <a href="index.html"> <img src="icons/logo_IFS.webp" alt="logo"  width="50" height="50"></a>
@@ -21,21 +30,22 @@
     </header>
 
     <!--Navigation-->
-    <hr>
-		<nav class="nav">
-			<ul>
-				<li> <a href="about.html" >ჩვენს შესახებ</a></li>
-				<li> <a href = "news.html"> სიახლეები</a></li>
-				<li> <a href="#members"> წევრები</a></li>
-				<li><a href="#projects"> პროექტები</a></li>
-                <li><a href="#jourbal"> ჟურნალი</a></li>
-                <li><a href="#contact"> კონტაქტი</a></li>
 
-                <li>
-                    <a href="tel:123-456-7890" id="phone">+995 598 208 202</a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="icons/fb.png"   width="20" height="20"></a></li>
-			</ul>
+
+    <hr>
+		<nav class="nav" id="myTopnav">
+			<ul>
+                <a href ="index.html"> მთავარი</a>
+				<a href="about.html" >ჩვენს შესახებ</a>
+				<a href = "news.html"> სიახლეები</a>
+				<a href="#members"> წევრები</a>
+				<a href="#projects"> პროექტები</a>
+                <a href="#jourbal"> ჟურნალი</a>
+                <a href="#contact"> კონტაქტი</a>
+                <a href="tel:123-456-7890" id="phone">+995 598 208 202</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="icons/fb.png"   width="20" height="20"></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </ul>
 		</nav>
     <hr>
     <!--End of Navigation-->
@@ -111,6 +121,6 @@
 
     </footer>
  
-	
+</body>
 
 </html>
